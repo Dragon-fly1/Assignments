@@ -1,9 +1,9 @@
 import pandas as pd
 
-DATA_FILE = "data.csv"
+DATA_FILE = " "    #path to data file
 data = pd.read_csv(DATA_FILE)
 
-target_cols = []    #data to be encoded
+target_cols = []    #data columns to be encoded
 
 for col in target_cols:
     count = 0
