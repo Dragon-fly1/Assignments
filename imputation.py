@@ -14,7 +14,7 @@ def imputation(data,type=0):    #type = 0,1,2 for mean,median and mode respectiv
                 data.loc[row,col] = imputation_data[col][type]
 
 
-DATA_FILE = "train.csv"
+DATA_FILE = " "    #path to data file
 data = pd.read_csv(DATA_FILE)
 
 imputation(data,1)
