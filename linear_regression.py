@@ -55,7 +55,7 @@ def gradient(X,y,w,b):
         for j in range(n):
             dj_dw[j] += (err*X[i,j]/m)
         dj_db += err
-    
+    dj_db /= m 
     return dj_dw,dj_db
 
 def gradient_descent(X,y,w_in,b_in,cost_function,gradient_function,alpha,iter_num):
